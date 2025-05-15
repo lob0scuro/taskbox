@@ -1,0 +1,36 @@
+.homeScreen {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  align-items: flex-start;
+  justify-self: flex-start;
+  overflow-y: auto;
+}
+
+.modalHomeScreen {
+  filter: blur(4px);
+}
+
+.homeScreenHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.taskStateButtonBlock {
+  display: flex;
+  justify-content: flex-start;
+  /* gap: 24px; */
+  width: 100%;
+  margin-top: 24px;
+}
+
+.taskStateButtonBlock button {
+  border: none;
+  background-color: var(--background);
+  border-radius: 12px 12px 0 0;
+}
+
+.taskStateButtonBlock button:last-child {
+  margin-left: auto;
+}

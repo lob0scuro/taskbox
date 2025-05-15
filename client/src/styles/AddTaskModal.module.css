@@ -1,0 +1,57 @@
+.modal {
+  height: 100dvh;
+  width: 100%;
+  background-color: var(--backgroundDark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 300;
+  overflow-x: hidden;
+  filter: opacity(0.9);
+  padding: 1.2rem 0.8rem;
+}
+
+.modal .modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45%;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  height: 80dvh;
+  margin-top: 30px;
+}
+
+.modalForm textarea {
+  width: 90%;
+  height: 4rem;
+  background-color: var(--textSecondary);
+  color: var(--backgroundDark);
+  font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+  .modal .modalHeader {
+    margin-top: 10%;
+    width: 80%;
+  }
+  .modalForm {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  .modalForm textarea {
+    width: 100%;
+  }
+}

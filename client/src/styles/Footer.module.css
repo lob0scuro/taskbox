@@ -1,0 +1,22 @@
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background);
+  color: var(--text);
+  height: 80px;
+  padding-inline: 24px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer a {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--textDark);
+}
