@@ -25,7 +25,7 @@ def register():
         new_user = User(first_name=first_name.capitalize(), last_name=last_name.capitalize(), password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
-        return jsonify(mesage=f"{new_user.first_name} has been registered!"), 201
+        return jsonify(message=f"{new_user.first_name} has been registered!"), 201
     except Exception as e:
         db.session.rollback()
         print(f"Server Error during registration: {e}")

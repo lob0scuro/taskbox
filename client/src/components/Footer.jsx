@@ -19,7 +19,11 @@ const Footer = () => {
   return (
     <footer>
       <p>Task Box</p>
-      {user && <Link onClick={handleLogout}>Logout</Link>}
+      {user ? (
+        <Link onClick={handleLogout}>Logout</Link>
+      ) : (
+        <Link to="/register">Register</Link>
+      )}
     </footer>
   );
 };
